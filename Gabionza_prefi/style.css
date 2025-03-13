@@ -1,0 +1,380 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #444;
+    position: relative;
+    padding: 25px;
+}
+
+/* Hero Video Section */
+.hero-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.hero-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Header and Navigation */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    max-height: 80px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Content */
+main {
+    padding-top: 100px;
+    text-align: center;
+}
+
+/* Product Section */
+.product-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    color: #333;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.movie-category {
+    margin-bottom: 20px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.product-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Price Styling */
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+/* Rating and Comments */
+/* Rating and Comments */
+.rating-stars {
+    margin-top: 10px;
+    color: #ffc107;
+    font-size: 1.5em; /* Adjusted for better spacing */
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+}
+.star {
+        color: #ccc;
+        font-size: 1em;
+        transition: color 0.2s ease, transform 0.2s ease;
+        margin: 0 5px;
+        cursor: pointer;
+    
+}
+
+.star.selected {
+    color: #f39c12;
+    transform: scale(1.2);
+    
+}
+
+.star:hover {
+    color: #e0f312;
+    transform: scale(1.2);
+}
+
+.rating-count {
+    color: #777;
+    margin-left: 5px;
+    font-size: 0.8em; /* Add styling for rating count */
+}
+
+.comments {
+    margin-top: 10px;
+}
+
+.comment {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.comment-author {
+    font-style: italic;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    color: #333;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.contact-left,
+.contact-right {
+    flex: 1 1 45%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.contact-left h3,
+.contact-right h3 {
+    color: black; /* Changed to black */
+    margin-bottom: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item img {
+    max-height: 30px;
+    margin-right: 10px;
+}
+
+.contact-item p,
+.contact-item a {
+    color: black; /* Changed to black */
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black; /* Black border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.945); /* Darker background */
+    color: white;
+}
+
+.contact-right textarea {
+    height: 120px;
+}
+
+.contact-right button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-right button:hover {
+    background-color: #0056b3;
+}
+/* Responsive Design (Example) */
+@media (max-width: 768px) {
+    .contact-hero {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
+}
+
+/* Section Titles */
+.section-title {
+    margin-bottom: 20px;
+}
+
+/* Specific product rating fix */
+.product-card:nth-child(2) .rating,
+.product-card:nth-child(3) .rating,
+.movie-category:nth-child(2) .product-card .rating {
+    margin-top: 10px;
+    color: #ffc107;
+    font-size: 2em;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+}
+
+/* FAQ Section */
+
+.faq-title {
+    color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+.faq-section {
+    padding: 20px;
+    background-color: #444;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #000000;
+}
+
+.faq-item {
+    border-bottom: 1px solid #000000;
+    margin-bottom: 10px;
+    background-color: #444;
+}
+
+.faq-question {
+    background-color: #000000;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.faq-question:hover {
+    background-color: #ddd;
+}
+
+.faq-answer {
+    padding: 0 18px;
+    display: none;
+    background-color: #f1f1f1;
+}
+
+.faq-item.active .faq-question {
+    background-color: #efefef; /* Example: Slightly darker background */
+}
+
+.faq-item.active .faq-answer {
+    display: block; /* Ensures the answer is visible when active */
+}
